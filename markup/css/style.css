@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    padding: 50px;
+    background-color: #C4C4C4;
+    font-size: 0;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #FC8F8F;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    background-color: #E6E6E6;
+    margin-bottom: 50px;
+}
+
+li {
+    margin-left: 15px;
+    display: inline-block;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+li:first-child {
+    margin-left: 0px;
+}
+
+/* FIRST BOX */
+
+.box_1 li:nth-child(2) {
+    overflow: hidden;
+    float: right;
+}
+
+/* SECOND BOX */
+
+.box_2 li:not(:first-child) {
+    float: right;
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    line-height: 42.19px;
+}
+
+.box_2 {
+    overflow: hidden;
+}
+
+/* ul :not(:first-child) {
+    float: right;
+} */
+
+/* ul :first-child {
+   
+} */
+
+.box_2 li {
+    float: left;
+   
+}
+
+.box_2 li :not(:first-child) {
+    float: left;
+}
+
+/* THIRD BOX */
+
+.box_3 li:nth-child(n+3) {
+    float: right;
+}
